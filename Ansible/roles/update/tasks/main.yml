@@ -1,0 +1,7 @@
+---
+
+- name: "Update repositories"
+  yum:
+    name: '*'
+    state: latest
+    update_cache: true

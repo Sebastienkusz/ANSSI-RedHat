@@ -1,0 +1,17 @@
+---
+
+- name: "Update OS"
+  hosts: appli
+  roles:
+    - "update"
+
+- name: "Installation openscap"
+  become: true
+  hosts: appli
+  roles:
+    - openscap
+
+- name: "ANSSI-RECOM"
+  hosts: appli
+  roles:
+    - anssi-recom

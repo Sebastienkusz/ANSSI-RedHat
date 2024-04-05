@@ -1,0 +1,10 @@
+---
+
+- name: install openscap scanner
+  package:
+    name: "{{ item }}"
+    state: latest
+  tags: install
+  with_items:
+  - openscap-scanner
+  - scap-security-guide
